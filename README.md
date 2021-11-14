@@ -26,7 +26,7 @@ Using a function to extract the columns from the sqlite table, I notice there is
 
 ![sqlite columns](/Images/Columns.PNG)
 
-We could extract preciptation data from Measurement table and run desribe to get precipitation statistics for both months
+We could extract precipitation data from Measurement table and run desribe to get precipitation statistics for both months.
 session.query(Measurement.date, Measurement.prcp).filter(extract('month', Measurement.date)==6).all()
 
 ![June Precip Statistics](/Images/JunePrecip.PNG)
